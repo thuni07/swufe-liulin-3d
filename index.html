@@ -13,6 +13,14 @@
 <aside class="panel"><h2>⌕　寻找校园地点</h2><input id="search" class="search" placeholder="搜索：格致楼、食堂、宿舍…"><div class="chips" id="chips"><button class="chip active" data-cat="全部">全部</button><button class="chip" data-cat="教学">教学</button><button class="chip" data-cat="生活">生活</button><button class="chip" data-cat="运动">运动</button><button class="chip" data-cat="校门">校门</button></div><div id="places"></div><div class="footer">地图为基于公开资料构建的概念性3D示意模型。建筑位置、尺寸与道路细节尚未经过测绘校准。</div></aside>
 <section class="detail" id="detail"><div class="tag">CAMPUS SPOTLIGHT</div><h2>欢迎来到柳林校区</h2><p>选择右侧地点，或直接点击场景中的建筑。你可以自由旋转、缩放，从不同角度探索这座校园。</p></section>
 <div class="north">N　<b>↑</b>　校园示意北向</div><div class="hint">鼠标拖动：旋转　·　滚轮：缩放　·　右键拖动：平移</div><div class="controls"><button id="home">⌂ 重置视角</button><button id="top">▦ 鸟瞰视角</button><button id="labels">◎ 标签开关</button></div>
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"
+  }
+}
+</script>
+
 <script type="module">
 import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js';
 import {OrbitControls} from 'https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/controls/OrbitControls.js';
